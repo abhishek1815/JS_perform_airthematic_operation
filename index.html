@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+        }
+        p{
+            font-size: 100px;
+            text-align: center;
+            padding-top: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <p>Thank You! For Visit.</p>
+
+    <script>
+
+        alert(`Press OK! To Perform Arithmetic Operation on Two Numbers :  __ (  ) __ =`)
+
+        let input_1 = Number(prompt('Enter the First number : '));
+        let op = prompt("Enter the operation '+','-','*','/' : ")
+        let input_2 = Number(prompt('Enter the Second number: '));
+
+
+        let sum ;
+        let difference ;
+        let product ;
+        let division ;
+
+        
+    switch(op){
+      case '+':
+        sum= input_1 + input_2;
+        alert(`Sum of ${input_1} and ${input_2} is ${sum} .`);
+        break;
+
+      case '-':
+        difference= input_1 - input_2;
+        alert(`Difference of ${input_1} and ${input_2} is ${difference} .`);
+        break;
+
+      case '*':
+        product= input_1 * input_2;
+        alert(`Product of ${input_1} and ${input_2} is ${product} .`);
+        break;
+
+      case '/':
+        if(input_2 !== 0){
+
+        division = input_1 / input_2;
+          alert(`Division of ${input_1} by ${input_2} is ${division} .`);
+        } 
+        else{
+          alert(`Division by 0 is Undefined.`);
+        }
+        break;
+
+      default:
+        alert(`Invalid operation. Please enter + , - , * , or /.`);
+
+    }
+        
+       
+        
+    </script>
+</body>
+</html>
